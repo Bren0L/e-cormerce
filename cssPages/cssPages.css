@@ -57,11 +57,17 @@ p{
     flex-basis: 200px;
     max-width: 150px;
     margin: 10px;
+    transition: transform 1s;
+    transform: translateX(0) scale(1);
+    mix-blend-mode: multiply;
+}
+
+.col-4:hover{
+    transform: translateX(10px) scale(1.2);
 }
 
 .col-4 img{
-    width: 100%;
-    mix-blend-mode: multiply;
+    max-height: 110px;
 }
 
 .products{
@@ -119,4 +125,14 @@ body{
     padding: 20px;
     max-width: 300px;
 }
+
+.col-5 img{
+    transition: transform 1s;
+    transform: translateX(0) scale(1);
+}
+
+.col-5 img:hover{
+    transform: translateX(10px) scale(1.2);
+}
+
 

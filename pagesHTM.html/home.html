@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/cssPages/embarqueNesse.css">
+    <link rel="stylesheet" href="/cssPages/cssPages.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+  <!--TOP-->
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="/images/logo.png">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="productsSection.html">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contacts</a></li>
+                <li><a href=""><img src="/images/carrinho.png"></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--CARROSSEL-->
+    <p style="text-align: center">Especial Products</p>
+        
+        <div class="slideshow-container">
+        
+        <div class="mySlides">
+          <img src="/images/pc1.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <img src="/images/pc2.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <img src="/images/pc3.jpg" style="width:100%">
+        </div>
+        
+        </div>
+        <br>
+
+        <!--LASTEST PRODUCTS-->
+        <p class="lP">Lastest Products</p><br>
+        <div class="lastestProducts">
+          
+          <div class="col-5">
+            <img src="/images/pc1.jpg" alt="">
+          </div>
+        <div class="col-5">
+          <img src="/images/pc2.jpg" alt="">
+          </div>
+            <div class="col-5">
+            <img src="/images/pc3.jpg" alt="">
+          </div>
+          <div class="col-5">
+            <img src="/images/pc4.jpg" alt="">
+          </div>
+        <div class="col-5">
+          <img src="/images/pc5.jpg" alt="">
+        </div>
+        </div>
+
+        <!--PROMOTIONAL PRODUCTS-->
+        <p class="lP">Promotional Products</p><br>
+        <div class="lastestProducts">
+          
+          <div class="col-5">
+            <img src="/images/pc6.jpg" alt="">
+          </div>
+        <div class="col-5">
+          <img src="/images/pc7.jpg" alt="">
+          </div>
+            <div class="col-5">
+            <img src="/images/pc8.jpg" alt="">
+          </div>
+          <div class="col-5">
+            <img src="/images/pc9.jpg" alt="">
+          </div>
+        <div class="col-5">
+          <img src="/images/pc10.jpg" alt="">
+        </div>
+        </div>
+        <script>
+          let slideIndex = 0;
+          showSlides();
+
+          function showSlides() {
+            
+            let slides = document.getElementsByClassName("mySlides");
+            //let dots = document.getElementsByClassName("dot");
+
+            for (let i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            
+            slides[slideIndex].style.display = "block";
+            slideIndex++;
+            if(slideIndex == slides.length) slideIndex = 0;
+            setTimeout(showSlides, 5000);
+          }
+        </script>
+</div>
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+        <h3>Download</h3>
+        <p>Download for IOS e Android</p>
+      </div>
+        <div class="footer-col-2">
+        <h3>Follow us</h3>
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>YouTube</li>
+        </ul>
+      </div> 
+    </div>
+  </div>
+  <div class="footer-col-3">
+    <p>Copiright. this app was launched by a great developpers equip and you can not copy all the work they had or we will see you in the court</p>
+  </div>
+</div>
+</body>
+
+
+</html>
